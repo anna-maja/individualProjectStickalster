@@ -1,0 +1,182 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1053{\fonttbl{\f0\fnil\fcharset0 Calibri;}{\f1\fnil Calibri;}}
+{\*\generator Riched20 10.0.16299}\viewkind4\uc1 
+\pard\sl240\slmult1\f0\fs22\lang29 -- Befolka tabeller\tab\tab\tab\tab\par
+\par
+\par
+-- Tabell colour \f1\endash  alla inserts har fungerat\tab\par
+\par
+-- insert colour, 14 poster.\par
+\par
+INSERT INTO `individualprojectstickalster`.`colour` (`ID`, `colour`) VALUES ('1', 'cerise');\par
+INSERT INTO `individualprojectstickalster`.`colour` (`ID`, `colour`) VALUES ('2', 'neonrosa');\par
+INSERT INTO `individualprojectstickalster`.`colour` (`colour`) VALUES ('karamellrosa');\par
+INSERT INTO `individualprojectstickalster`.`colour` (`colour`) VALUES ('ljusgr\f0\'e5');\par
+INSERT INTO `individualprojectstickalster`.`colour` (`colour`) VALUES ('mellangr\'e5');\par
+INSERT INTO `individualprojectstickalster`.`colour` (`colour`) VALUES ('m\'f6rkgr\'e5');\par
+INSERT INTO `individualprojectstickalster`.`colour` (`colour`) VALUES ('svart');\par
+INSERT INTO `individualprojectstickalster`.`colour` (`colour`) VALUES ('kritvit');\par
+INSERT INTO `individualprojectstickalster`.`colour` (`colour`) VALUES ('naturvit');\par
+INSERT INTO `individualprojectstickalster`.`colour` (`colour`) VALUES ('hallonrosa');\par
+INSERT INTO `individualprojectstickalster`.`colour` (`colour`) VALUES ('r\'f6d-svart melerad');\par
+INSERT INTO `individualprojectstickalster`.`colour` (`colour`) VALUES ('sky pink');\par
+INSERT INTO `individualprojectstickalster`.`colour` (`colour`) VALUES ('m\'f6rk turkos');\par
+INSERT INTO `individualprojectstickalster`.`colour` (`colour`) VALUES ('m\'f6rk cerise');\par
+INSERT INTO `individualprojectstickalster`.`colour` (`colour`) VALUES ('sj\'e4lvrand:  ljusbl\'e5, rost, mullv, lite gult');\par
+\par
+\par
+\par
+\par
+-- Tabell garn \f1\endash  alla inserts har fungerat\tab\tab\par
+\f0\lang1053 -- eller s\'e5 blri det en protest f\'f6r att jag anger id=1?\f1\lang29\par
+\par
+-- insert garn. 8 poster, 3 olika m\f0\'e4rken.\par
+\par
+INSERT INTO `individualprojectstickalster`.`garn` (`ID`, `nameManuf`, `material`) VALUES ('1', 'Ullcentrum entr\'e5digt ullgarn', '100% ull');\par
+INSERT INTO `individualprojectstickalster`.`garn` (`ID`, `nameManuf`, `material`) VALUES ('2', 'Ullcentrum tv\'e5tr\'e5digt ullgarn', '100% ull');\par
+INSERT INTO `individualprojectstickalster`.`garn` (`nameManuf`, `material`) VALUES ('Svarta Katten Siri', '100% akryl');\par
+INSERT INTO `individualprojectstickalster`.`garn` (`nameManuf`, `material`) VALUES ('Svarta Katten Freja', '100% akryl');\par
+INSERT INTO `individualprojectstickalster`.`garn` (`nameManuf`, `material`) VALUES ('J\'e4rbo Lady', '100% akryl');\par
+INSERT INTO `individualprojectstickalster`.`garn` (`nameManuf`, `material`) VALUES ('Svarta Katten Galaxy reflexgarn', 'akryl, reflex');\par
+INSERT INTO `individualprojectstickalster`.`garn` (`nameManuf`, `material`) VALUES ('J\'e4rbo reflexgarn', 'ull, reflex');\par
+INSERT INTO `individualprojectstickalster`.`garn` (`nameManuf`, `material`) VALUES ('J\'e4rbo Molly', '100% akryl');\par
+\par
+\par
+\par
+-- Tabell item \f1\endash  alla inserts funkar, inkl l\f0\'e4gga till kolumn\tab\f1\par
+\f0\lang1053 -- eller s\'e5 blri det en protest f\'f6r att jag anger id=1?\lang29\par
+\par
+-- insert och update item. Id, modelltyp, kategori. 5 poster. 2 olika kategorier, 5 olika modeller.\par
+\par
+INSERT INTO `individualprojectstickalster`.`item` (`ID`, `modellTyp`) VALUES ('1', 'Trekantssjal, nacke till spets, v-form');\par
+INSERT INTO `individualprojectstickalster`.`item` (`ID`, `modellTyp`) VALUES ('2', 'Trekantssjal, spets till topp');\par
+INSERT INTO `individualprojectstickalster`.`item` (`modellTyp`) VALUES ('Dragspelssockar');\par
+INSERT INTO `individualprojectstickalster`.`item` (`modellTyp`) VALUES ('Pussyhat');\par
+INSERT INTO `individualprojectstickalster`.`item` (`modellTyp`) VALUES ('Halsduk');\par
+INSERT INTO `individualprojectstickalster`.`item` (`modellTyp`) VALUES ('Sockar');\par
+\par
+-- ALTER TABLE item\par
+-- ADD column kategori varchar(50);\par
+\par
+UPDATE `individualprojectstickalster`.`item` SET `kategori`='sjal' WHERE `ID`='1';\par
+UPDATE `individualprojectstickalster`.`item` SET `kategori`='sjal' WHERE `ID`='2';\par
+UPDATE `individualprojectstickalster`.`item` SET `kategori`='sockar' WHERE `ID`='3';\par
+UPDATE `individualprojectstickalster`.`item` SET `kategori`='m\'f6ssa' WHERE `ID`='4';\par
+UPDATE `individualprojectstickalster`.`item` SET `kategori`='halsduk' WHERE `ID`='5';\par
+\par
+\par
+\par
+-- Tabell mottagare \f1\endash  alla inserts fungerar.\tab\tab\par
+\f0\lang1053 -- eller s\'e5 blri det en protest f\'f6r att jag anger id=1?\f1\lang29\par
+\par
+-- insert mottagare. 8 poster. \par
+\par
+INSERT INTO `individualprojectstickalster`.`mottagare` (`ID`, `namn`) VALUES ('1', 'Kim');\par
+INSERT INTO `individualprojectstickalster`.`mottagare` (`ID`, `namn`) VALUES ('2', 'Hugo');\par
+INSERT INTO `individualprojectstickalster`.`mottagare` (`namn`) VALUES ('Sami');\par
+INSERT INTO `individualprojectstickalster`.`mottagare` (`namn`, `kontakt`) VALUES ('Marie', 'messenger');\par
+INSERT INTO `individualprojectstickalster`.`mottagare` (`namn`, `kontakt`) VALUES ('Eira', 'Marie');\par
+INSERT INTO `individualprojectstickalster`.`mottagare` (`namn`) VALUES ('Mamma');\par
+INSERT INTO `individualprojectstickalster`.`mottagare` (`namn`) VALUES ('Fia Windh');\par
+INSERT INTO `individualprojectstickalster`.`mottagare` (`namn`) VALUES ('Amal, Samis syster');\par
+\par
+\par
+\par
+-- Tabell alster\tab - alla inserts fungerar\tab\tab\par
+\f0\lang1053 -- eller s\'e5 blri det en protest f\'f6r att jag anger id=1?\f1\lang29\tab\par
+\par
+-- insert alster. 8 poster\par
+\par
+INSERT INTO `individualprojectstickalster`.`alster` (`ID`, `Mottagare_ID`, `teknik`, `pris`) VALUES ('1', '1', 'R\f0\'e4tstickning', '0');\par
+INSERT INTO `individualprojectstickalster`.`alster` (`Mottagare_ID`, `teknik`, `pris`) VALUES ('2', 'R\'e4tstickning', '0');\par
+INSERT INTO `individualprojectstickalster`.`alster` (`Mottagare_ID`, `teknik`, `pris`) VALUES ('3', 'R\'e4tstickning', '0');\par
+INSERT INTO `individualprojectstickalster`.`alster` (`Mottagare_ID`, `teknik`) VALUES ('4', 'R\'e4tstickning');\par
+INSERT INTO `individualprojectstickalster`.`alster` (`Mottagare_ID`, `teknik`) VALUES ('5', 'R\'e4tstickning');\par
+INSERT INTO `individualprojectstickalster`.`alster` (`Mottagare_ID`, `teknik`) VALUES ('6', 'R\'e4tstickning');\par
+INSERT INTO `individualprojectstickalster`.`alster` (`Mottagare_ID`, `teknik`) VALUES ('7', 'R\'e4tstickning');\par
+INSERT INTO `individualprojectstickalster`.`alster` (`Mottagare_ID`, `teknik`) VALUES ('8', 'R\'e4tstickning');\par
+\par
+\par
+\par
+-- Tabell alster_has_garn\tab - fungerar MEN \'e4r det r\'e4tt v\'e4rden?\tab\par
+\par
+\par
+-- insert alster_has_garn\par
+-- Satserna fungerar. Men skulle jag inte ha med f\'e4rg h\'e4r ocks\'e5???\par
+\par
+INSERT INTO `individualprojectstickalster`.`alster_has_garn` (`Alster_ID`, `Alster_Mottagare_ID`, `Garn_ID`) VALUES ('1', '1', '1');\par
+INSERT INTO `individualprojectstickalster`.`alster_has_garn` (`Alster_ID`, `Alster_Mottagare_ID`, `Garn_ID`) VALUES ('2', '2', '1');\par
+INSERT INTO `individualprojectstickalster`.`alster_has_garn` (`Alster_ID`, `Alster_Mottagare_ID`, `Garn_ID`) VALUES ('3', '3', '1');\par
+INSERT INTO `individualprojectstickalster`.`alster_has_garn` (`Alster_ID`, `Alster_Mottagare_ID`, `Garn_ID`) VALUES ('4', '4', '1');\par
+INSERT INTO `individualprojectstickalster`.`alster_has_garn` (`Alster_ID`, `Alster_Mottagare_ID`, `Garn_ID`) VALUES ('5', '5', '1');\par
+INSERT INTO `individualprojectstickalster`.`alster_has_garn` (`Alster_ID`, `Alster_Mottagare_ID`, `Garn_ID`) VALUES ('6', '6', '1');\par
+INSERT INTO `individualprojectstickalster`.`alster_has_garn` (`Alster_ID`, `Alster_Mottagare_ID`, `Garn_ID`) VALUES ('7', '7', '1');\par
+INSERT INTO `individualprojectstickalster`.`alster_has_garn` (`Alster_ID`, `Alster_Mottagare_ID`, `Garn_ID`) VALUES ('8', '8', '1');\par
+INSERT INTO `individualprojectstickalster`.`alster_has_garn` (`Alster_ID`, `Alster_Mottagare_ID`, `Garn_ID`) VALUES ('9', '1', '5');\par
+\par
+\par
+\par
+-- Tabell alster_has_item\tab -- fungerar MEN \'e4r det r\'e4tt v\'e4rden?\tab\tab\par
+\par
+\par
+-- insert alster_has_item \par
+-- Satserna fungerar. Men har jag r\'e4tt v\'e4rden h\'e4r? Sv\'e5rt att f\'f6rst\'e5.\par
+\par
+INSERT INTO `individualprojectstickalster`.`alster_has_item` (`Alster_ID`, `Alster_Mottagare_ID`, `Item_ID`) VALUES ('1', '1', '1');\par
+INSERT INTO `individualprojectstickalster`.`alster_has_item` (`Alster_ID`, `Alster_Mottagare_ID`, `Item_ID`) VALUES ('2', '2', '1');\par
+INSERT INTO `individualprojectstickalster`.`alster_has_item` (`Alster_ID`, `Alster_Mottagare_ID`, `Item_ID`) VALUES ('3', '3', '1');\par
+INSERT INTO `individualprojectstickalster`.`alster_has_item` (`Alster_ID`, `Alster_Mottagare_ID`, `Item_ID`) VALUES ('4', '4', '1');\par
+INSERT INTO `individualprojectstickalster`.`alster_has_item` (`Alster_ID`, `Alster_Mottagare_ID`, `Item_ID`) VALUES ('5', '5', '1');\par
+INSERT INTO `individualprojectstickalster`.`alster_has_item` (`Alster_ID`, `Alster_Mottagare_ID`, `Item_ID`) VALUES ('6', '6', '1');\par
+INSERT INTO `individualprojectstickalster`.`alster_has_item` (`Alster_ID`, `Alster_Mottagare_ID`, `Item_ID`) VALUES ('7', '7', '1');\par
+INSERT INTO `individualprojectstickalster`.`alster_has_item` (`Alster_ID`, `Alster_Mottagare_ID`, `Item_ID`) VALUES ('8', '8', '1');\par
+\par
+\par
+\par
+-- Tabell garn_has_colour \f1\endash  fungerar men \f0\'e4r det r\'e4tt v\'e4rden?\tab\tab\par
+\par
+\par
+-- insert garnHasColour, 10 poster. 4 olika garner, 6 olika f\'e4rger.\par
+\par
+INSERT INTO `individualprojectstickalster`.`garn_has_colour` (`Garn_ID`, `colour_ID`) VALUES ('5', '1');\par
+INSERT INTO `individualprojectstickalster`.`garn_has_colour` (`Garn_ID`, `colour_ID`) VALUES ('3', '2');\par
+INSERT INTO `individualprojectstickalster`.`garn_has_colour` (`Garn_ID`, `colour_ID`) VALUES ('6', '2');\par
+INSERT INTO `individualprojectstickalster`.`garn_has_colour` (`Garn_ID`, `colour_ID`) VALUES ('1', '4');\par
+INSERT INTO `individualprojectstickalster`.`garn_has_colour` (`Garn_ID`, `colour_ID`) VALUES ('1', '7');\par
+INSERT INTO `individualprojectstickalster`.`garn_has_colour` (`Garn_ID`, `colour_ID`) VALUES ('1', '9');\par
+INSERT INTO `individualprojectstickalster`.`garn_has_colour` (`Garn_ID`, `colour_ID`) VALUES ('1', '11');\par
+INSERT INTO `individualprojectstickalster`.`garn_has_colour` (`Garn_ID`, `colour_ID`) VALUES ('1', '12');\par
+INSERT INTO `individualprojectstickalster`.`garn_has_colour` (`Garn_ID`, `colour_ID`) VALUES ('1', '13');\par
+INSERT INTO `individualprojectstickalster`.`garn_has_colour` (`Garn_ID`, `colour_ID`) VALUES ('1', '14');\par
+\par
+\par
+\par
+-- Detta fungerar inte. Jag ser inte heller hur jag har t\'e4nkt.\par
+\par
+-- INSERT INTO `individualprojectstickalster`.`alster_has_garn` (`Alster_ID`, `Alster_Mottagare_ID`, `Garn_ID`) VALUES ('1', '4', '8');\par
+\par
+\par
+\par
+\par
+-- Skapa vy \rdblquote alltomalster\rdblquote  \f1\endash  fungerar MEN jag vet inte hur jag skall f\f0\'e5 fram r\'e4tt v\'e4rden...\par
+\par
+USE `individualprojectstickalster`;\par
+CREATE \par
+     OR REPLACE ALGORITHM = UNDEFINED \par
+    DEFINER = `root`@`localhost` \par
+    SQL SECURITY DEFINER\par
+VIEW `alltomalster` AS\par
+    SELECT \par
+    `mottagare`.`ID` AS `MottagarID`,\par
+        `mottagare`.`namn` AS `Namn`,\par
+        `item`.`modellTyp` AS `F\'f6rem\'e5l`,\par
+        `garn`.`nameManuf` AS `Garn`,\par
+        `colour`.`colour` AS `F\'e4rg`\par
+    FROM\par
+        ((((`alster`\par
+        JOIN `item`)\par
+        JOIN `mottagare`)\par
+        JOIN `garn`)\par
+        JOIN `colour`);\par
+\par
+}
+ 
